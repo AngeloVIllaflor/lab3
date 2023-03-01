@@ -5,9 +5,9 @@ $emailUsed = filter_input(INPUT_POST, 'email');
 if (!empty($fullName)){
     if (!empty($emailUsed)){
 
-        $host = "localhost";
+        $host = "192.168.150.213";
         $dbusername = "webprogmi211";
-        $dbpassword = "webprogmi211";
+        $dbpassword = "j@zzyAngle30";
         $dbname = "webprogmi211";
 
         // connections are inputted below //
@@ -18,8 +18,8 @@ if (mysqli_connect_error()){
     die('Connect Error (' . mysqli_connect_errno() . ') '
     . mysqli_connect_error());
 }else{
-    $sql = "INSERT INTO anvillaflor_MyGuests (fullname, email,)
-    values ('$fullname', '$email')";
+    $sql = "INSERT INTO anvillaflor_MyGuests (id, fullname, email,)
+    values ('$id', '$fullname', '$email')";
     if ($conn->query($sql)){
         echo "New Record has been added.";
     }else{
