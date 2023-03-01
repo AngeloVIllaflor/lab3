@@ -18,8 +18,8 @@ if (mysqli_connect_error()){
     die('Connect Error (' . mysqli_connect_errno() . ') '
     . mysqli_connect_error());
 }else{
-    $sql = "SELECT anvillaflor_MyGuests (id, fullname, email,)
-    values ('$id', '$fullname', '$email')";
+    $sql = "SELECT anvillaflor_MyGuests (fullname, email)
+    values ('$fullname', '$email')";
     if ($conn->query($sql)){
         echo "New Record has been added.";
     }else{
