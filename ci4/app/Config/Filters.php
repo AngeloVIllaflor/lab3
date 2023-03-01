@@ -61,5 +61,6 @@ class Filters extends BaseConfig
      * 'isLoggedIn' => ['before' => ['account/*', 'profiles/*']]
      */
     public array $filters = [
-	'post' => ['csrf'],];
+	'post' => ['csrf'],
+	];
 }
