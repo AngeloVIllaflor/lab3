@@ -1,8 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title>CodeIgniter Tutorial</title>
+
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 </head>
 <body>
-
-    <h1><?= esc($title) ?></h1>
